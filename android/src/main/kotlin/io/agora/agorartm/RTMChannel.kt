@@ -66,13 +66,13 @@ class RTMChannel : RtmChannelListener, EventChannel.StreamHandler {
         )
     }
 
-    override fun onImageMessageReceived(p0: RtmImageMessage?, p1: RtmChannelMember?) {
-        TODO("Not yet implemented")
-    }
+//    override fun onImageMessageReceived(p0: RtmImageMessage?, p1: RtmChannelMember?) {
+//        TODO("Not yet implemented")
+//    }
 
-    override fun onFileMessageReceived(p0: RtmFileMessage?, p1: RtmChannelMember?) {
-        TODO("Not yet implemented")
-    }
+//    override fun onFileMessageReceived(p0: RtmFileMessage?, p1: RtmChannelMember?) {
+//        TODO("Not yet implemented")
+//    }
 
     override
     fun onMemberJoined(member: RtmChannelMember) {
@@ -115,4 +115,7 @@ class RTMChannel : RtmChannelListener, EventChannel.StreamHandler {
     fun onCancel(params: Any?) {
         this.eventSink = null
     }
+
+    override
+    onTokenPrivilegeWillExpire()
 }

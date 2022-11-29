@@ -271,7 +271,5 @@ class RTMClient : RtmClientListener, EventChannel.StreamHandler, RtmCallEventLis
     }
 
     override
-    fun onTokenPrivilegeWillExpire(){
-
-    }
+    fun onTokenPrivilegeWillExpire(){}
 }

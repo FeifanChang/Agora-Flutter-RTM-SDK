@@ -234,9 +234,9 @@ class RTMClient : RtmClientListener, EventChannel.StreamHandler, RtmCallEventLis
         )
     }
 
-    override fun onImageMessageReceivedFromPeer(p0: RtmImageMessage?, p1: String?) {
-        TODO("Not yet implemented")
-    }
+//    override fun onImageMessageReceivedFromPeer(p0: RtmImageMessage?, p1: String?) {
+//        TODO("Not yet implemented")
+//    }
 
 //    override fun onFileMessageReceivedFromPeer(p0: RtmFileMessage?, p1: String?) {
 //        TODO("Not yet implemented")
@@ -246,9 +246,9 @@ class RTMClient : RtmClientListener, EventChannel.StreamHandler, RtmCallEventLis
 //        TODO("Not yet implemented")
 //    }
 
-    override fun onMediaDownloadingProgress(p0: RtmMediaOperationProgress?, p1: Long) {
-        TODO("Not yet implemented")
-    }
+//    override fun onMediaDownloadingProgress(p0: RtmMediaOperationProgress?, p1: Long) {
+//        TODO("Not yet implemented")
+//    }
 
     override
     fun onTokenExpired() {
@@ -267,6 +267,11 @@ class RTMClient : RtmClientListener, EventChannel.StreamHandler, RtmCallEventLis
 
     override
     fun onPeersOnlineStatusChanged(p0: MutableMap<String, Int>) {
+
+    }
+
+    override
+    fun onTokenPrivilegeWillExpire(){
 
     }
 }

@@ -117,5 +117,5 @@ class RTMChannel : RtmChannelListener, EventChannel.StreamHandler {
     }
 
     override
-    onTokenPrivilegeWillExpire()
+    fun onTokenPrivilegeWillExpire()
 }
